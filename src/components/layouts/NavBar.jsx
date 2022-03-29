@@ -9,23 +9,25 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <header className="header-container">
-      <img src={logo} alt="logo" />
+      <Link to="/">
+        <img src={logo} alt="logo" />
+      </Link>
       <nav>
         <ul className="menu-navigation">
           <li>
-            <a href="#">People</a>
+            <Link to="/people">People</Link>
           </li>
           <li>
-            <a href="#">Planets</a>
+            <Link to="/planets">Planets</Link>
           </li>
           <li>
-            <a href="#">Species</a>
+            <Link to="/species">Species</Link>
           </li>
           <li>
-            <a href="#">Starships</a>
+            <Link to="/starships">Starships</Link>
           </li>
           <li>
-            <a href="#">Vehicles</a>
+            <Link to="/starships">Vehicles</Link>
           </li>
         </ul>
       </nav>
